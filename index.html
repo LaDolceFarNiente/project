@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>project</h1>
+    <div class="nextpage">
+        <a href="form2.html">Next > </a>
+    </div>
+    <div class="container">
+        <div class="text">
+            <p> <i class="fa-regular fa-envelope"></i> email@example.com</p>
+            <p><i class="fa-solid fa-phone"></i> +1-555-777-3110</p>
+        </div>
+        <div class="input">
+            <div class="boxemail">
+                <form action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </form>
+            </div>
+            <div class="boxnumber">
+                <form action="#">
+                    <input type="url" placeholder="Website">
+                    <input type="text" placeholder="Subject">
+                </form>
+            </div>
+        </div>
+        <textarea name="message" id="text" cols="80" rows="15" placeholder="Message"></textarea>
+        <button>
+            <a href="#">send message</a>
+        </button>
+    </div>
 </body>
 </html>

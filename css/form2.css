@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background: #A500C8;
+}
+.container {
+    margin: 50px auto;
+    width: 800px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+}
+.image {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formtext {
+    margin: 20px 0;
+    padding: 50px 0;
+    width: 50%;
+    text-align: center;
+}
+.formtext h1 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+form {
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin: 20px 0;
+    padding: 20px 20px;
+    background: #E5E5E5;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+::placeholder {
+    color: #6B6B6B;
+    font-size: 20px;
+}
+button {
+    margin: 20px 0;
+    padding: 15px 138px;
+    background: #20CC44;
+    border: none;
+    border-radius: 50px;
+}
+button a {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+p {
+    margin: 20px 0 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #20CC44; 
+}
+.nextpage {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.nextpage a {
+    margin: 10px 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
