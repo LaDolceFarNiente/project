@@ -9,6 +9,9 @@
 body {
     background: #1ABB9E;
 }
+a {
+    color: #fff;
+}
 .container {
     margin: 100px auto;
     width: 500px;
@@ -17,26 +20,31 @@ ul.menu {
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 ul.menu li {
     color: #fff;
     font-size: 30px;
-    position: relative;
 }
-ul.menu li:hover+.sub_menu {
+ul.menu li:hover .sub_menu {
     opacity: 1;
     visibility: visible;
+    top: 60px;
 }
 .sub_menu {
     text-align: center;
-}
-.sub_menu form {
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
-    
     position: absolute;
+    top: 300px;
+    left: -40px;
+    right: -50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
 }
+
 .sub_menu form input {
     padding: 15px 97px;
     margin: 5px 0;
@@ -51,3 +59,33 @@ ul.menu li:hover+.sub_menu {
     text-transform: capitalize;
     font-size: 18px;
 }
+.content .sub_menu {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    left: -40px;
+    right: -50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.content.sub_menu form input {
+    padding: 15px 97px;
+    margin: 5px 0;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    
+}
+::placeholder {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
