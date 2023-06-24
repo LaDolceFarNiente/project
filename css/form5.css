@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+:root {
+    --dark_color: #393646;
+    --main_color: #4F4557;
+    --bg_color: #6D5D6E;
+    --text_color: #F4EEE0;
+}
+body {
+    background: var(--dark_color);
+}
+.container {
+    width: 600px;
+    margin: 5% auto;
+    background: var(--main_color);
+}
+.row {
+    width: 100%;
+    background: var(--main_color);
+    display: flex;
+    gap: 20px;
+}
+form {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    outline: none;
+    flex-direction: column;
+    background: var(--main_color);
+}
+label {
+    width: 100%;
+    position: relative;
+}
+label span {
+    padding: 0 10px;
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    text-transform: capitalize;
+    font-size: 20px;
+    background: inherit;
+    transition: 0.3s;    
+    background: var(--main_color);
+    color: var(--text_color);
+}
+.row label input:focus + span {
+    top: 10px;
+}
+label input {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: var(--main_color);
+    border: 2px solid var(--bg_color);
+    color: #B4A5A5;
+    font-size: 18px;
+}
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: var(--main_color);
+    border: 2px solid var(--bg_color);
+    color: #B4A5A5;
+    font-size: 18px;
+    position: relative;
+}
+label textarea:focus + span {
+    top: 10px;
+}
+button.btn {
+    margin: 0 20px 20px;
+    padding: 10px 40px;
+    background: none;
+    border: 2px solid var(--bg_color);
+    font-size: 20px;
+    color: #d3c7c7;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    background-color: #6D5D6E;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #B4A5A5;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: var(--text_color);
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+.btn:hover {
+    background-color: #4F4557;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #393646;
+}
+.btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+.btn:active {
+    transform: scale(0.9);
+}
+.nextpage {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.nextpage a {
+    margin: 10px 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
